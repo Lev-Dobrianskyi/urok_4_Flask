@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Візитка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            margin-bottom: 30px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 15px;
+        }
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #0056b3;
+        }
+        h1 {
+            color: #007bff;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .about-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .about-section h2 {
+            color: #007bff;
+            margin-top: 0;
+        }
+        .personal-info {
+            background-color: #e7f3ff;
+            padding: 15px;
+            border-left: 4px solid #007bff;
+            margin-bottom: 20px;
+        }
+        .personal-info p {
+            margin: 8px 0;
+            font-size: 1.1em;
+        }
+        .projects-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .projects-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="/">Головна</a>
+            <a href="/about">Про мене</a>
+            <a href="/skills">Навички</a>
+        </nav>
+
+        <h1>Про мене</h1>
+
+        <div class="personal-info">
+            <p><strong>Ім'я:</strong> {{ person.name }}</p>
+            <p><strong>Вік:</strong> {{ person.age }} років</p>
+            <p><strong>Місто:</strong> {{ person.city }}</p> <!-- <--- I didnt want to type out a ton of info so AI did it for me, its not like its actual code or anything I couldnt do -->
+        </div>
+
+        <div class="about-section">
+            <h2>Коротко про себе</h2>
+            <p>Я професійний розробник з досвідом в розробці веб-додатків та програмному забезпеченні. Мій послідовний розвиток у галузі IT дозволив мені оволодіти сучасними технологіями та найкращими практиками розробки.</p>
+            <p>Я захоплююся вирішенням складних завдань і створенням користувацькими дружніх додатків, які допомагають людям у їхній роботі.</p>
+        </div>
+
+        <div class="about-section">
+            <h2>Досвід</h2>
+            <p>Я мав можливість працювати над різними проєктами, які включали:</p>
+            <ul>
+                <li>Розробка веб-сайтів та веб-додатків</li>
+                <li>Розробка RESTful API</li>
+                <li>Робота з базами даних</li>
+                <li>Фронтенд розробка з HTML/CSS та JavaScript</li>
+                <li>Бекенд розробка з Python та Flask</li>
+            </ul>
+        </div>
+
+        <div class="about-section">
+            <h2>Освіта</h2>
+            <p>Я постійно навчаюся та розвиваюся, слідкуючи за новими технологіями та трендами в розробці. Я цінувати безупинне навчання і постійно покращую свої навички.</p>
+        </div>
+
+        <p>Якщо вас цікавлять мої проєкти, перейдіть до <a href="/">головної сторінки</a> для подальшої інформації.</p>
+    </div>
+</body>
+</html>
